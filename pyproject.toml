@@ -1,3 +1,10 @@
+[tool.poetry]
+name = "python3-jose-kc22"
+version = "3.3.0"
+description = "A JOSE implementation in Python"
+authors = ["mpdavis"]
+
+
 [build-system]
 requires = [
     "setuptools >= 39.2.0",

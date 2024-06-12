@@ -350,8 +350,18 @@ def _validate_aud(claims, audience=None):
     if any(not isinstance(c, str) for c in audience_claims):
         raise JWTClaimsError("Invalid claim format in token")
     if audience not in audience_claims:
-        raise JWTClaimsError("Invalid audience")
-
+        azp_claims = claims.get("azp", None)
+        if azp_claims:
+            if isinstance(azp_claims, str):
+                azp_claims = [azp_claims]
+            if not isinstance(azp_claims, list):
+                raise JWTClaimsError("Invalid claim format in token")
+            if any(not isinstance(c, str) for c in azp_claims):
+                raise JWTClaimsError("Invalid claim format in token")
+            if audience not in azp_claims:
+                raise JWTClaimsError("Invalid audience")
+        else:
+            raise JWTClaimsError("Invalid audience")
 
 def _validate_iss(claims, issuer=None):
     """Validates that the 'iss' claim is valid.

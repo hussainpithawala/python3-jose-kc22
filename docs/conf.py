@@ -1,4 +1,4 @@
-# python-jose documentation build configuration file, created by
+# python3-jose-kc22 documentation build configuration file, created by
 # sphinx-quickstart on Thu May  7 13:48:43 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -46,7 +46,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "python-jose"
+project = "python3-jose-kc22"
 copyright = "2015, Michael Davis"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -197,7 +197,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ("index", "python-jose.tex", "python-jose Documentation", "Michael Davis", "manual"),
+    ("index", "python3-jose-kc22.tex", "python3-jose-kc22 Documentation", "Michael Davis", "manual"),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -225,7 +225,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [("index", "python-jose", "python-jose Documentation", ["Michael Davis"], 1)]
+man_pages = [("index", "python3-jose-kc22", "python3-jose-kc22 Documentation", ["Michael Davis"], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -239,10 +239,10 @@ man_pages = [("index", "python-jose", "python-jose Documentation", ["Michael Dav
 texinfo_documents = [
     (
         "index",
-        "python-jose",
-        "python-jose Documentation",
+        "python3-jose-kc22",
+        "python3-jose-kc22 Documentation",
         "Michael Davis",
-        "python-jose",
+        "python3-jose-kc22",
         "One line description of project.",
         "Miscellaneous",
     ),
